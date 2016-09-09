@@ -1,0 +1,146 @@
+{
+	"person":{
+		"name": "褚林银",
+		"job": "前端开发工程师"
+	},
+
+	"infors": [
+		{
+			"icon": "https://img.alicdn.com/imgextra/i1/1086204413/TB2QYj0aqi5V1BjSspmXXXlwpXa_!!1086204413.png",
+			"description": "男 21岁"
+		},
+		{	
+			"icon": "https://img.alicdn.com/imgextra/i3/1086204413/TB2Z2H1ap15V1Bjy1XbXXaNcVXa_!!1086204413.png",
+			"description": "党员"
+		},
+		{
+			"icon": "https://img.alicdn.com/imgextra/i3/1086204413/TB2wDPYap15V1Bjy1XaXXaPqVXa_!!1086204413.png",
+			"description": "138-442-0941"
+		},
+		{
+			"icon": "https://img.alicdn.com/imgextra/i1/1086204413/TB22JHYaqi5V1BjSspnXXa.3XXa_!!1086204413.png",
+			"description": "chulinyin0317@gmail.com"
+		},
+		{
+			"icon": "https://img.alicdn.com/imgextra/i3/1086204413/TB2snruap_AQeBjSZFtXXbFBVXa_!!1086204413.png",
+			"description": "github.com/chulinyin"
+		},
+		{
+			"icon": "https://img.alicdn.com/imgextra/i3/1086204413/TB2XhDVap95V1Bjy0FhXXb5wXXa_!!1086204413.png",
+			"description": "浙江杭州"
+		}
+	],
+
+	"skills": [
+		{
+			"name": "HTML（精通）",
+			"level": "90"
+		},
+		{
+			"name": "CSS（掌握）",
+			"level": "80"
+		},
+		{
+			"name": "JavaScript（掌握）",
+			"level": "75"
+		},
+		{
+			"name": "Photoshop（掌握）",
+			"level": "85"
+		},
+		{
+			"name": "Git（了解）",
+			"level": "60"
+		}
+	],
+
+	"hobbies": [
+		{
+			"icon": "https://img.alicdn.com/imgextra/i2/1086204413/TB2H.68ap55V1Bjy0FpXXXhDpXa_!!1086204413.png",
+			"hobby": "看书"
+		},		{
+			"icon": "https://img.alicdn.com/imgextra/i3/1086204413/TB2jAr7ap55V1Bjy1XcXXXQjFXa_!!1086204413.png",
+			"hobby": "跑步"
+		},		{
+			"icon": "https://img.alicdn.com/imgextra/i4/1086204413/TB2bQr7ap55V1Bjy1XcXXXQjFXa_!!1086204413.png",
+			"hobby": "听歌"
+		},		{
+			"icon": "https://img.alicdn.com/imgextra/i2/1086204413/TB2wZn2aqa5V1Bjy0FaXXaXvpXa_!!1086204413.png",
+			"hobby": "设计"
+		}
+	],
+
+	"projectExperiences":{
+		"title": "WEB前端相关经历",
+		"icon": "",
+		"experiences": [
+			{
+				"title": "杭州淘粉吧网络技术——前端实习生（2016.06 –2016.09）",
+				"descriptions": [
+					{"description": "主要负责移动端活动页面开发，配合设计师实现视觉稿，与后端工程师协作完成页面需求。期间采用rem布局解决方案，实现移动端页面自适应。"},
+					{"description": "能够熟练使用Scss以及JQuery进行网页开发。"},
+					{"description": "了解前端工作流，能够使用webpack等开发工具辅助开发。"},
+					{"description": "了解前端MVVM框架VueJs，能够用其对网页进行组件化开发。"}
+				]
+			},
+			{
+				"title": "网易云课堂前端微专业——第三期成员（2015.12 - 2016.04）",
+				"descriptions":[
+					{"description": "独立制作一个响应式页面（不使用框架和第三方库），包含用户验证登录、图片轮播、课程数据Ajax请求与显示、页码切换、视频播放器等功能。"},
+					{"description": "系统学习前端工程师所需的六门必修课程：页面制作、JavaScript程序设计、DOM编程艺术、页面架构、产品前端架构、Web前端开发实践，并获得优秀结业证书。"},
+					{"description": "前端基础扎实，了解H5和CSS3，能,熟练使用原生API进行网页开发。"}
+				]
+			}
+		]
+	},
+	"schoolExperiences":{
+		"title": "校园经历",
+		"icon": "",
+		"experiences": [
+			{
+				"title": "创行社团——技术部部长（2014.05 - 2015.05）",
+				"descriptions":[
+					{"description": "期间负责管理技术部并为整个团队提供PPT、视频、海报、年报、名片等技术支持，团队协作能力强。"},
+					{"description": "完成3次招新海报设计，扩大了社团知名度，使得招新工作顺利进行。"},
+					{"description": "组织5次PS和PPT技术培训，加强了团队成员的审美能力和软件技能。"},
+					{"description": "主导“道富”公益项目比赛和创行华东赛的PPT设计制作。"}
+				]
+			},
+			{
+				"title": "创行“蜂和日密”项目组——负责人（2014.10 - 2015.05）",
+				"descriptions":[
+					{"description": "走访调研诸暨蜂农情况3次，成功说服蜂农成为项目受众。"},
+					{"description": "通过控制成本、扩大销售和改良技术的方式，提高了蜂农年收益。"},
+					{"description": "以该项目参加创行华东赛，获得第四名。"}
+				]
+			}
+		]
+	},
+
+	"educationBackgrounds":{
+		"title": "教育背景",
+		"icon": "",
+		"backgrounds": [
+			{
+				"title": "中国计量大学——自动化专业（2013.09-2017.06）",
+				"descriptions":[
+					{"description": "GPA：3.72/5.0 "},
+					{"description": "奖学金：2次国家励志奖学金、1次校二等奖学金、5次校三等奖学金"},
+					{"description": "证书：国家二级计算机证书（C语言）、全国大学生英语六级证书"},
+					{"description": "专利和论文：两项实用新型专利发明人、一篇已发表论文参与者"}
+				]
+			}
+		]
+	},
+
+	"personalIntroductions":{
+		"title": "个人介绍",
+		"icon": "",
+		"introductions":[
+			{"description":"做事认真靠谱：曾为了制作社团比赛的PPT以及班级优良学风班评比的PPT连续几天熬夜；"},
+			{"description":"自学能力强：在社团期间自学平面设计基础，掌握基本设计理念，能熟练使用Photoshop、Ai、PPT等软件，目前正努力自学网页前端开发；"},
+			{"description":"有很强的毅力和韧性：曾坚持写日记400多天，现已坚持写个人博客4个月；"},
+			{"description":"是一个文艺青年：喜欢看一些文学类书籍，喜欢听歌。"}
+		]
+	}
+}
