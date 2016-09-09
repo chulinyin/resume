@@ -10,7 +10,7 @@
   "keywords": [
     "resume"
   ],
-  "author": "",
+  "author": "dangcer",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",

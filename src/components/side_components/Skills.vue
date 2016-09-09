@@ -23,6 +23,7 @@
 	}
 </script>
 <style lang='sass' scoped>
+
 	.skills{
 		margin-top: 60px;
 		
