@@ -38,8 +38,8 @@
   .title{
     margin-bottom: 14px;
     padding-bottom: 6px;
-    border-bottom: 1px solid #a6c02a;
-    color:#a6c02a;
+    border-bottom: 1px solid #658b95;
+    color:#658b95;
     font-size: 14px;
     font-weight: bold;
   }
@@ -47,7 +47,7 @@
   .itemTitle{
     margin-top: 14px;
     margin-bottom: 10px;
-    color: #606060;
+    color: #787878;
     font-size:12px;
   }
 

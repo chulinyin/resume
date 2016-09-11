@@ -36,7 +36,7 @@
   padding-right: 18px;
   padding-top: 75px;
   color: #fff;
-  background-color: #a6c02a;
+  background-color: #9DAEB2;
 }
 
 </style>

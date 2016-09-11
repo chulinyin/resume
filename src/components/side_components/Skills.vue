@@ -44,7 +44,7 @@
 				
 				p{
 					height: 100%;
-					background-color: #cde266;
+					background-color: #becdd5;
 				}
 			}		
 		}

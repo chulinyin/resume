@@ -10785,7 +10785,7 @@
 
 
 	// module
-	exports.push([module.id, ".side {\n  width: 224px;\n  padding-left: 18px;\n  padding-right: 18px;\n  padding-top: 75px;\n  color: #fff;\n  background-color: #a6c02a; }\n", ""]);
+	exports.push([module.id, ".side {\n  width: 224px;\n  padding-left: 18px;\n  padding-right: 18px;\n  padding-top: 75px;\n  color: #fff;\n  background-color: #9DAEB2; }\n", ""]);
 
 	// exports
 
@@ -11259,7 +11259,7 @@
 
 
 	// module
-	exports.push([module.id, ".skills[_v-2b348d25] {\n  margin-top: 60px; }\n  .skills .title[_v-2b348d25] {\n    margin-bottom: 20px;\n    padding-bottom: 6px;\n    border-bottom: 1px solid #fff; }\n  .skills .skill div[_v-2b348d25] {\n    width: 188px;\n    height: 8px;\n    margin-top: 5px;\n    margin-bottom: 13px;\n    background-color: #fff; }\n    .skills .skill div p[_v-2b348d25] {\n      height: 100%;\n      background-color: #cde266; }\n", ""]);
+	exports.push([module.id, ".skills[_v-2b348d25] {\n  margin-top: 60px; }\n  .skills .title[_v-2b348d25] {\n    margin-bottom: 20px;\n    padding-bottom: 6px;\n    border-bottom: 1px solid #fff; }\n  .skills .skill div[_v-2b348d25] {\n    width: 188px;\n    height: 8px;\n    margin-top: 5px;\n    margin-bottom: 13px;\n    background-color: #fff; }\n    .skills .skill div p[_v-2b348d25] {\n      height: 100%;\n      background-color: #becdd5; }\n", ""]);
 
 	// exports
 
@@ -11439,7 +11439,7 @@
 
 
 	// module
-	exports.push([module.id, ".main {\n  height: 100%;\n  padding: 20px 30px 30px 25px; }\n  .main .title {\n    margin-bottom: 14px;\n    padding-bottom: 6px;\n    border-bottom: 1px solid #a6c02a;\n    color: #a6c02a;\n    font-size: 14px;\n    font-weight: bold; }\n  .main .itemTitle {\n    margin-top: 14px;\n    margin-bottom: 10px;\n    color: #606060;\n    font-size: 12px; }\n  .main .description {\n    margin-top: 7px;\n    padding-left: 13px;\n    background: url(\"https://img.alicdn.com/imgextra/i3/1086204413/TB2sXogaqi5V1BjSspnXXa.3XXa_!!1086204413.png\") 0 3px no-repeat;\n    line-height: 1.4em; }\n", ""]);
+	exports.push([module.id, ".main {\n  height: 100%;\n  padding: 20px 30px 30px 25px; }\n  .main .title {\n    margin-bottom: 14px;\n    padding-bottom: 6px;\n    border-bottom: 1px solid #658b95;\n    color: #658b95;\n    font-size: 14px;\n    font-weight: bold; }\n  .main .itemTitle {\n    margin-top: 14px;\n    margin-bottom: 10px;\n    color: #787878;\n    font-size: 12px; }\n  .main .description {\n    margin-top: 7px;\n    padding-left: 13px;\n    background: url(\"https://img.alicdn.com/imgextra/i3/1086204413/TB2sXogaqi5V1BjSspnXXa.3XXa_!!1086204413.png\") 0 3px no-repeat;\n    line-height: 1.4em; }\n", ""]);
 
 	// exports
 
