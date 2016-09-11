@@ -10336,7 +10336,7 @@
 	var __vue_script__, __vue_template__
 	__webpack_require__(4)
 	__vue_script__ = __webpack_require__(8)
-	__vue_template__ = __webpack_require__(48)
+	__vue_template__ = __webpack_require__(60)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
@@ -10387,7 +10387,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: #ddd; }\n\n.resume {\n  width: 690px;\n  margin: 0 auto;\n  background-color: #fff;\n  overflow: hidden; }\n  .resume .main {\n    padding-bottom: 999px;\n    margin-bottom: -999px; }\n  .resume .side {\n    padding-bottom: 999px;\n    margin-bottom: -999px; }\n  .resume .side {\n    float: left; }\n  .resume .main {\n    overflow: hidden; }\n", ""]);
+	exports.push([module.id, "body {\n  background-color: #ECF0F1; }\n\n/*let two columns have same height*/\n.resume {\n  width: 690px;\n  margin: 50px auto 100px auto;\n  overflow: hidden;\n  box-shadow: 0px 30px 60px 0px #D3DDE2;\n  background-color: #fff; }\n  .resume .main, .resume .side {\n    padding-bottom: 999px;\n    margin-bottom: -999px; }\n  .resume .side {\n    float: left; }\n  .resume .main {\n    overflow: hidden; }\n", ""]);
 
 	// exports
 
@@ -10732,9 +10732,9 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(81)
+	__webpack_require__(10)
 	__vue_script__ = __webpack_require__(12)
-	__vue_template__ = __webpack_require__(83)
+	__vue_template__ = __webpack_require__(34)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
@@ -10751,8 +10751,46 @@
 	})()}
 
 /***/ },
-/* 10 */,
-/* 11 */,
+/* 10 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(11);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(7)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5b45155c&file=Side.vue!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Side.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5b45155c&file=Side.vue!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Side.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(6)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".side {\n  width: 224px;\n  padding-left: 18px;\n  padding-right: 18px;\n  padding-top: 75px;\n  color: #fff;\n  background-color: #a6c02a; }\n", ""]);
+
+	// exports
+
+
+/***/ },
 /* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -11338,14 +11376,19 @@
 	module.exports = "\n\t<div class=\"hobbies\" _v-51cd0ac6=\"\">\n\t\t<h1 class=\"title fs14 bold\" _v-51cd0ac6=\"\">兴趣爱好</h1>\n\t\t<ul _v-51cd0ac6=\"\">\n\t\t\t<li class=\"hobby\" v-for=\"hobby in hobbies\" _v-51cd0ac6=\"\">\n\t\t\t\t<img class=\"icon\" :src=\"hobby.icon\" _v-51cd0ac6=\"\"><span class=\"description fs12\" _v-51cd0ac6=\"\">{{ hobby.hobby }}</span>\n\t\t\t</li>\n\t\t</ul>\n</div>";
 
 /***/ },
-/* 34 */,
+/* 34 */
+/***/ function(module, exports) {
+
+	module.exports = "\r\n  <div class=\"side\">\r\n    <person :person=\"resumeData.person\"></person>\r\n    <informations :infors=\"resumeData.infors\"></informations>\r\n    <skills :skills=\"resumeData.skills\"></skills>\r\n    <hobbies :hobbies=\"resumeData.hobbies\"></hobbies>\r\n  </div>\r\n";
+
+/***/ },
 /* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(84)
+	__webpack_require__(36)
 	__vue_script__ = __webpack_require__(38)
-	__vue_template__ = __webpack_require__(86)
+	__vue_template__ = __webpack_require__(59)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
@@ -11362,481 +11405,13 @@
 	})()}
 
 /***/ },
-/* 36 */,
-/* 37 */,
-/* 38 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _resumeData = __webpack_require__(13);
-
-	var _resumeData2 = _interopRequireDefault(_resumeData);
-
-	var _ProjectExperiences = __webpack_require__(61);
-
-	var _ProjectExperiences2 = _interopRequireDefault(_ProjectExperiences);
-
-	var _SchoolExperiences = __webpack_require__(66);
-
-	var _SchoolExperiences2 = _interopRequireDefault(_SchoolExperiences);
-
-	var _EducationBackgrounds = __webpack_require__(71);
-
-	var _EducationBackgrounds2 = _interopRequireDefault(_EducationBackgrounds);
-
-	var _personalIntroductions = __webpack_require__(76);
-
-	var _personalIntroductions2 = _interopRequireDefault(_personalIntroductions);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	  data: function data() {
-	    return { resumeData: _resumeData2.default };
-	  },
-
-	  components: {
-	    ProjectExperiences: _ProjectExperiences2.default,
-	    SchoolExperiences: _SchoolExperiences2.default,
-	    EducationBackgrounds: _EducationBackgrounds2.default,
-	    personalIntroductions: _personalIntroductions2.default
-	  }
-	};
-
-/***/ },
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */
-/***/ function(module, exports) {
-
-	module.exports = "\r\n\t<div class=\"resume \">\r\n\t\t<side></side>\r\n\t\t<main></main>\r\n\t</div>\r\n";
-
-/***/ },
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(62)
-	__vue_script__ = __webpack_require__(64)
-	__vue_template__ = __webpack_require__(65)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "F:\\H\\WebFontEnd\\E-Project\\WebFrontProject\\webApp\\resume\\src\\components\\main_components\\ProjectExperiences.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 62 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(63);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(7)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-04cf9696&file=ProjectExperiences.vue&scoped=true!./../../../node_modules/sass-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./ProjectExperiences.vue", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-04cf9696&file=ProjectExperiences.vue&scoped=true!./../../../node_modules/sass-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./ProjectExperiences.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 63 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(6)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".projExps .title[_v-04cf9696] {\n  margin-bottom: 15px;\n  padding-bottom: 6px;\n  border-bottom: 1px solid #a6c02a;\n  color: #a6c02a; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 64 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	exports.default = {
-		props: {
-			projectExperiences: {
-				type: Object,
-				required: true
-			}
-		}
-	};
-
-/***/ },
-/* 65 */
-/***/ function(module, exports) {
-
-	module.exports = "\n\t<div class=\"projExps\" _v-04cf9696=\"\">\n\t\t<h1 class=\"title fs14 bold\" _v-04cf9696=\"\">{{ projectExperiences.title }}</h1>\n\t\t<ul _v-04cf9696=\"\">\n\t\t\t<li class=\"\" v-for=\"exp in projectExperiences.experiences\" _v-04cf9696=\"\">\n\t\t\t\t<h2 class=\"itemTitle fs12 bold\" _v-04cf9696=\"\">{{ exp.title }}</h2>\n\t\t\t\t<ul _v-04cf9696=\"\">\n\t\t\t\t\t<li class=\"description fs12\" v-for=\"desp in exp.descriptions\" _v-04cf9696=\"\">\n\t\t\t\t\t\t{{ desp.description }}\n\t\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t\t\t\n\t\t\t</li>\n\t\t</ul>\n\t</div>\n";
-
-/***/ },
-/* 66 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(67)
-	__vue_script__ = __webpack_require__(69)
-	__vue_template__ = __webpack_require__(70)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "F:\\H\\WebFontEnd\\E-Project\\WebFrontProject\\webApp\\resume\\src\\components\\main_components\\SchoolExperiences.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 67 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(68);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(7)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-da361800&file=SchoolExperiences.vue&scoped=true!./../../../node_modules/sass-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./SchoolExperiences.vue", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-da361800&file=SchoolExperiences.vue&scoped=true!./../../../node_modules/sass-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./SchoolExperiences.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 68 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(6)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".schoolExps[_v-da361800] {\n  margin-top: 22px; }\n  .schoolExps .title[_v-da361800] {\n    margin-bottom: 15px;\n    padding-bottom: 6px;\n    border-bottom: 1px solid #a6c02a; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 69 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	exports.default = {
-		props: {
-			schoolExperiences: {
-				type: Object,
-				required: true
-			}
-		}
-	};
-
-/***/ },
-/* 70 */
-/***/ function(module, exports) {
-
-	module.exports = "\n\t<div class=\"schoolExps\" _v-da361800=\"\">\n\t\t<h1 class=\"title fs14\" _v-da361800=\"\">{{ schoolExperiences.title }}</h1>\n\t\t<ul _v-da361800=\"\">\n\t\t\t<li class=\"\" v-for=\"exp in schoolExperiences.experiences\" _v-da361800=\"\">\n\t\t\t\t<h2 class=\"itemTitle fs12 bold\" _v-da361800=\"\">{{ exp.title }}</h2>\n\t\t\t\t<ul _v-da361800=\"\">\n\t\t\t\t\t<li class=\"description fs12\" v-for=\"desp in exp.descriptions\" _v-da361800=\"\">\n\t\t\t\t\t\t{{ desp.description }}\n\t\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t\t\t\n\t\t\t</li>\n\t\t</ul>\n\t</div>\n";
-
-/***/ },
-/* 71 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(72)
-	__vue_script__ = __webpack_require__(74)
-	__vue_template__ = __webpack_require__(75)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "F:\\H\\WebFontEnd\\E-Project\\WebFrontProject\\webApp\\resume\\src\\components\\main_components\\EducationBackgrounds.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 72 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(73);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(7)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-109f4fc2&file=EducationBackgrounds.vue&scoped=true!./../../../node_modules/sass-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./EducationBackgrounds.vue", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-109f4fc2&file=EducationBackgrounds.vue&scoped=true!./../../../node_modules/sass-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./EducationBackgrounds.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 73 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(6)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".eduBcgs[_v-109f4fc2] {\n  margin-top: 22px; }\n  .eduBcgs .title[_v-109f4fc2] {\n    margin-bottom: 15px;\n    padding-bottom: 6px;\n    border-bottom: 1px solid #a6c02a; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 74 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	exports.default = {
-		props: {
-			educationBackgrounds: {
-				type: Object,
-				required: true
-			}
-		}
-	};
-
-/***/ },
-/* 75 */
-/***/ function(module, exports) {
-
-	module.exports = "\n\t<div class=\"eduBcgs\" _v-109f4fc2=\"\">\n\t\t<h1 class=\"title fs14\" _v-109f4fc2=\"\">{{ educationBackgrounds.title }}</h1>\n\t\t<ul _v-109f4fc2=\"\">\n\t\t\t<li class=\"schoolExp\" v-for=\"eduBcg in educationBackgrounds.backgrounds\" _v-109f4fc2=\"\">\n\t\t\t\t<h2 class=\"itemTitle fs12 bold\" _v-109f4fc2=\"\">{{ eduBcg.title }}</h2>\n\t\t\t\t<ul _v-109f4fc2=\"\">\n\t\t\t\t\t<li class=\"description fs12\" v-for=\"desp in eduBcg.descriptions\" _v-109f4fc2=\"\">\n\t\t\t\t\t\t{{ desp.description }}\n\t\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t\t\t\n\t\t\t</li>\n\t\t</ul>\n\t</div>\n";
-
-/***/ },
-/* 76 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(77)
-	__vue_script__ = __webpack_require__(79)
-	__vue_template__ = __webpack_require__(80)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "F:\\H\\WebFontEnd\\E-Project\\WebFrontProject\\webApp\\resume\\src\\components\\main_components\\personalIntroductions.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 77 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(78);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(7)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-47cfe4b8&file=personalIntroductions.vue&scoped=true!./../../../node_modules/sass-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./personalIntroductions.vue", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-47cfe4b8&file=personalIntroductions.vue&scoped=true!./../../../node_modules/sass-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./personalIntroductions.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 78 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(6)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".personalIntros[_v-47cfe4b8] {\n  margin-top: 22px;\n  margin-bottom: 30px; }\n  .personalIntros .title[_v-47cfe4b8] {\n    margin-bottom: 15px;\n    padding-bottom: 6px;\n    border-bottom: 1px solid #a6c02a; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 79 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	exports.default = {
-		props: {
-			personalIntroductions: {
-				type: Object,
-				required: true
-			}
-		}
-	};
-
-/***/ },
-/* 80 */
-/***/ function(module, exports) {
-
-	module.exports = "\n\t<div class=\"personalIntros\" _v-47cfe4b8=\"\">\n\t\t<h1 class=\"title fs14\" _v-47cfe4b8=\"\">{{ personalIntroductions.title }}</h1>\n\t\t<ul _v-47cfe4b8=\"\">\n\t\t\t<li class=\"description fs12\" v-for=\"intro in personalIntroductions.introductions\" _v-47cfe4b8=\"\">\n\t\t\t\t{{ intro.description }}\n\t\t\t</li>\n\t\t</ul>\n\t</div>\n";
-
-/***/ },
-/* 81 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(82);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(7)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5b45155c&file=Side.vue!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Side.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5b45155c&file=Side.vue!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Side.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 82 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(6)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".side {\n  width: 224px;\n  padding-left: 18px;\n  padding-right: 18px;\n  padding-top: 75px;\n  color: #fff;\n  background-color: #a6c02a; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 83 */
-/***/ function(module, exports) {
-
-	module.exports = "\r\n  <div class=\"side\">\r\n    <person :person=\"resumeData.person\"></person>\r\n    <informations :infors=\"resumeData.infors\"></informations>\r\n    <skills :skills=\"resumeData.skills\"></skills>\r\n    <hobbies :hobbies=\"resumeData.hobbies\"></hobbies>\r\n  </div>\r\n";
-
-/***/ },
-/* 84 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(85);
+	var content = __webpack_require__(37);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -11856,7 +11431,7 @@
 	}
 
 /***/ },
-/* 85 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(6)();
@@ -11864,16 +11439,415 @@
 
 
 	// module
-	exports.push([module.id, ".main {\n  height: 100%;\n  padding-left: 25px;\n  padding-right: 30px;\n  padding-top: 25px;\n  padding-bottom: 30px; }\n  .main .title {\n    margin-bottom: 14px;\n    padding-bottom: 6px;\n    border-bottom: 1px solid #a6c02a;\n    color: #a6c02a;\n    font-size: 14px;\n    font-weight: bold; }\n  .main .itemTitle {\n    margin-top: 14px;\n    margin-bottom: 10px;\n    color: #606060;\n    font-size: 12px; }\n  .main .description {\n    margin-top: 7px;\n    padding-left: 13px;\n    background: url(\"https://img.alicdn.com/imgextra/i3/1086204413/TB2sXogaqi5V1BjSspnXXa.3XXa_!!1086204413.png\") 0 3px no-repeat;\n    line-height: 1.5em; }\n", ""]);
+	exports.push([module.id, ".main {\n  height: 100%;\n  padding: 20px 30px 30px 25px; }\n  .main .title {\n    margin-bottom: 14px;\n    padding-bottom: 6px;\n    border-bottom: 1px solid #a6c02a;\n    color: #a6c02a;\n    font-size: 14px;\n    font-weight: bold; }\n  .main .itemTitle {\n    margin-top: 14px;\n    margin-bottom: 10px;\n    color: #606060;\n    font-size: 12px; }\n  .main .description {\n    margin-top: 7px;\n    padding-left: 13px;\n    background: url(\"https://img.alicdn.com/imgextra/i3/1086204413/TB2sXogaqi5V1BjSspnXXa.3XXa_!!1086204413.png\") 0 3px no-repeat;\n    line-height: 1.4em; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 86 */
+/* 38 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _resumeData = __webpack_require__(13);
+
+	var _resumeData2 = _interopRequireDefault(_resumeData);
+
+	var _ProjectExperiences = __webpack_require__(39);
+
+	var _ProjectExperiences2 = _interopRequireDefault(_ProjectExperiences);
+
+	var _SchoolExperiences = __webpack_require__(44);
+
+	var _SchoolExperiences2 = _interopRequireDefault(_SchoolExperiences);
+
+	var _EducationBackgrounds = __webpack_require__(49);
+
+	var _EducationBackgrounds2 = _interopRequireDefault(_EducationBackgrounds);
+
+	var _personalIntroductions = __webpack_require__(54);
+
+	var _personalIntroductions2 = _interopRequireDefault(_personalIntroductions);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	  data: function data() {
+	    return { resumeData: _resumeData2.default };
+	  },
+
+	  components: {
+	    ProjectExperiences: _ProjectExperiences2.default,
+	    SchoolExperiences: _SchoolExperiences2.default,
+	    EducationBackgrounds: _EducationBackgrounds2.default,
+	    personalIntroductions: _personalIntroductions2.default
+	  }
+	};
+
+/***/ },
+/* 39 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(40)
+	__vue_script__ = __webpack_require__(42)
+	__vue_template__ = __webpack_require__(43)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "F:\\H\\WebFontEnd\\E-Project\\WebFrontProject\\webApp\\resume\\src\\components\\main_components\\ProjectExperiences.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 40 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(41);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(7)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-04cf9696&file=ProjectExperiences.vue&scoped=true!./../../../node_modules/sass-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./ProjectExperiences.vue", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-04cf9696&file=ProjectExperiences.vue&scoped=true!./../../../node_modules/sass-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./ProjectExperiences.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 41 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(6)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".projExps[_v-04cf9696] {\n  margin: 22px 0; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 42 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports.default = {
+		props: {
+			projectExperiences: {
+				type: Object,
+				required: true
+			}
+		}
+	};
+
+/***/ },
+/* 43 */
+/***/ function(module, exports) {
+
+	module.exports = "\n\t<div class=\"projExps\" _v-04cf9696=\"\">\n\t\t<h1 class=\"title fs14 bold\" _v-04cf9696=\"\">{{ projectExperiences.title }}</h1>\n\t\t<ul _v-04cf9696=\"\">\n\t\t\t<li class=\"\" v-for=\"exp in projectExperiences.experiences\" _v-04cf9696=\"\">\n\t\t\t\t<h2 class=\"itemTitle fs12 bold\" _v-04cf9696=\"\">{{ exp.title }}</h2>\n\t\t\t\t<ul _v-04cf9696=\"\">\n\t\t\t\t\t<li class=\"description fs12\" v-for=\"desp in exp.descriptions\" _v-04cf9696=\"\">\n\t\t\t\t\t\t{{ desp.description }}\n\t\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t\t</li>\n\t\t</ul>\n\t</div>\n";
+
+/***/ },
+/* 44 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(45)
+	__vue_script__ = __webpack_require__(47)
+	__vue_template__ = __webpack_require__(48)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "F:\\H\\WebFontEnd\\E-Project\\WebFrontProject\\webApp\\resume\\src\\components\\main_components\\SchoolExperiences.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 45 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(46);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(7)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-da361800&file=SchoolExperiences.vue&scoped=true!./../../../node_modules/sass-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./SchoolExperiences.vue", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-da361800&file=SchoolExperiences.vue&scoped=true!./../../../node_modules/sass-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./SchoolExperiences.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 46 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(6)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".schoolExps[_v-da361800] {\n  margin: 22px 0; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 47 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports.default = {
+		props: {
+			schoolExperiences: {
+				type: Object,
+				required: true
+			}
+		}
+	};
+
+/***/ },
+/* 48 */
+/***/ function(module, exports) {
+
+	module.exports = "\n\t<div class=\"schoolExps\" _v-da361800=\"\">\n\t\t<h1 class=\"title fs14 bold\" _v-da361800=\"\">{{ schoolExperiences.title }}</h1>\n\t\t<ul _v-da361800=\"\">\n\t\t\t<li class=\"\" v-for=\"exp in schoolExperiences.experiences\" _v-da361800=\"\">\n\t\t\t\t<h2 class=\"itemTitle fs12 bold\" _v-da361800=\"\">{{ exp.title }}</h2>\n\t\t\t\t<ul _v-da361800=\"\">\n\t\t\t\t\t<li class=\"description fs12\" v-for=\"desp in exp.descriptions\" _v-da361800=\"\">\n\t\t\t\t\t\t{{ desp.description }}\n\t\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t\t</li>\n\t\t</ul>\n\t</div>\n";
+
+/***/ },
+/* 49 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(50)
+	__vue_script__ = __webpack_require__(52)
+	__vue_template__ = __webpack_require__(53)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "F:\\H\\WebFontEnd\\E-Project\\WebFrontProject\\webApp\\resume\\src\\components\\main_components\\EducationBackgrounds.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 50 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(51);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(7)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-109f4fc2&file=EducationBackgrounds.vue&scoped=true!./../../../node_modules/sass-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./EducationBackgrounds.vue", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-109f4fc2&file=EducationBackgrounds.vue&scoped=true!./../../../node_modules/sass-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./EducationBackgrounds.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 51 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(6)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".eduBcgs[_v-109f4fc2] {\n  margin: 22px 0; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 52 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports.default = {
+		props: {
+			educationBackgrounds: {
+				type: Object,
+				required: true
+			}
+		}
+	};
+
+/***/ },
+/* 53 */
+/***/ function(module, exports) {
+
+	module.exports = "\n\t<div class=\"eduBcgs\" _v-109f4fc2=\"\">\n\t\t<h1 class=\"title fs14 bold\" _v-109f4fc2=\"\">{{ educationBackgrounds.title }}</h1>\n\t\t<ul _v-109f4fc2=\"\">\n\t\t\t<li class=\"schoolExp\" v-for=\"eduBcg in educationBackgrounds.backgrounds\" _v-109f4fc2=\"\">\n\t\t\t\t<h2 class=\"itemTitle fs12 bold\" _v-109f4fc2=\"\">{{ eduBcg.title }}</h2>\n\t\t\t\t<ul _v-109f4fc2=\"\">\n\t\t\t\t\t<li class=\"description fs12\" v-for=\"desp in eduBcg.descriptions\" _v-109f4fc2=\"\">\n\t\t\t\t\t\t{{ desp.description }}\n\t\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t\t</li>\n\t\t</ul>\n\t</div>\n";
+
+/***/ },
+/* 54 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(55)
+	__vue_script__ = __webpack_require__(57)
+	__vue_template__ = __webpack_require__(58)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "F:\\H\\WebFontEnd\\E-Project\\WebFrontProject\\webApp\\resume\\src\\components\\main_components\\personalIntroductions.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 55 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(56);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(7)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-47cfe4b8&file=personalIntroductions.vue&scoped=true!./../../../node_modules/sass-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./personalIntroductions.vue", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-47cfe4b8&file=personalIntroductions.vue&scoped=true!./../../../node_modules/sass-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./personalIntroductions.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 56 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(6)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".personalIntros[_v-47cfe4b8] {\n  margin: 22px 0; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 57 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	exports.default = {
+		props: {
+			personalIntroductions: {
+				type: Object,
+				required: true
+			}
+		}
+	};
+
+/***/ },
+/* 58 */
+/***/ function(module, exports) {
+
+	module.exports = "\n\t<div class=\"personalIntros\" _v-47cfe4b8=\"\">\n\t\t<h1 class=\"title fs14 bold\" _v-47cfe4b8=\"\">{{ personalIntroductions.title }}</h1>\n\t\t<ul _v-47cfe4b8=\"\">\n\t\t\t<li class=\"description fs12\" v-for=\"intro in personalIntroductions.introductions\" _v-47cfe4b8=\"\">\n\t\t\t\t{{ intro.description }}\n\t\t\t</li>\n\t\t</ul>\n\t</div>\n";
+
+/***/ },
+/* 59 */
 /***/ function(module, exports) {
 
 	module.exports = "\r\n  <div class=\"main\">\r\n    <project-experiences :project-experiences=\"resumeData.projectExperiences\"></project-experiences>\r\n    <school-experiences :school-experiences=\"resumeData.schoolExperiences\"></school-experiences>\r\n    <education-backgrounds :education-backgrounds=\"resumeData.educationBackgrounds\"></education-backgrounds>\r\n    <personal-introductions :personal-introductions=\"resumeData.personalIntroductions\"></personal-introductions>\r\n  </div>\r\n";
+
+/***/ },
+/* 60 */
+/***/ function(module, exports) {
+
+	module.exports = "\r\n\t<div class=\"resume \">\r\n\t\t<side></side>\r\n\t\t<main></main>\r\n\t</div>\r\n";
 
 /***/ }
 /******/ ]);

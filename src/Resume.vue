@@ -18,22 +18,22 @@
 
 <style lang='sass'>
 	body{
-		background-color: #ddd;
+		background-color: #ECF0F1 ;
 	}
+
+	/*let two columns have same height*/
 	.resume{
 		width: 690px;
-		margin: 0 auto;
-		background-color: #fff;
+		margin: 50px auto 100px auto;
 		overflow: hidden;
+		box-shadow: 0px 30px 60px 0px #D3DDE2;
+		background-color: #fff;
 
-		.main{
+		.main,.side{
 			padding-bottom: 999px;
 			margin-bottom: -999px;
 		}
-		.side{
-			padding-bottom: 999px;
-			margin-bottom: -999px;
-		}
+
 		.side{
 			float: left;
 		}

@@ -9,11 +9,12 @@
 						{{ desp.description }}
 					</li>
 				</ul>
-				
 			</li>
 		</ul>
 	</div>
 </template>
+
+
 <script>
 	export default{
 		props:{
@@ -24,14 +25,10 @@
 		}
 	}
 </script>
+
+
 <style lang='sass' scoped>
 	.projExps{
-		
-		.title{
-			margin-bottom: 15px;
-			padding-bottom: 6px;
-			border-bottom: 1px solid #a6c02a;
-			color:#a6c02a;
-		}
+		margin: 22px 0;
 	}
 </style>

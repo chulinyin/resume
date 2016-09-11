@@ -33,14 +33,9 @@
 
 .main {
   height: 100%;
-  padding-left: 25px;
-  padding-right: 30px;
-  padding-top: 25px;
-
-  padding-bottom: 30px;
+  padding: 20px 30px 30px 25px;
 
   .title{
-    // margin-top: 22px;
     margin-bottom: 14px;
     padding-bottom: 6px;
     border-bottom: 1px solid #a6c02a;
@@ -48,6 +43,7 @@
     font-size: 14px;
     font-weight: bold;
   }
+
   .itemTitle{
     margin-top: 14px;
     margin-bottom: 10px;
@@ -59,7 +55,7 @@
     margin-top: 7px;
     padding-left: 13px;
     background: url( "https://img.alicdn.com/imgextra/i3/1086204413/TB2sXogaqi5V1BjSspnXXa.3XXa_!!1086204413.png" ) 0 3px no-repeat;
-    line-height: 1.5em; 
+    line-height: 1.4em; 
   }
   
 }

@@ -1,6 +1,6 @@
 <template>
 	<div class="schoolExps">
-		<h1 class="title fs14">{{ schoolExperiences.title }}</h1>
+		<h1 class="title fs14 bold">{{ schoolExperiences.title }}</h1>
 		<ul>
 			<li class="" v-for="exp in schoolExperiences.experiences">
 				<h2 class="itemTitle fs12 bold">{{ exp.title }}</h2>
@@ -9,13 +9,13 @@
 						{{ desp.description }}
 					</li>
 				</ul>
-				
 			</li>
 		</ul>
 	</div>
 </template>
-<script>
 
+
+<script>
 	export default{
 		props:{
 			schoolExperiences:{
@@ -25,16 +25,10 @@
 		}
 	}
 </script>
+
+
 <style lang='sass' scoped>
-
 	.schoolExps{
-		margin-top: 22px;
-		
-		.title{
-			margin-bottom: 15px;
-			padding-bottom: 6px;
-			border-bottom: 1px solid #a6c02a;
-		}
+		margin: 22px 0;
 	}
-
 </style>
