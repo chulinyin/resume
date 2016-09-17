@@ -40,7 +40,6 @@
     padding-bottom: 0.09rem;
     border-bottom: 0.01rem solid #658b95;
     color:#658b95;
-    font-size: 0.2rem;
     font-weight: bold;
   }
 

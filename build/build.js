@@ -11439,7 +11439,7 @@
 
 
 	// module
-	exports.push([module.id, ".main {\n  height: 100%;\n  padding: 0.29rem 0.43rem 0.43rem 0.36rem; }\n  .main .title {\n    margin-bottom: 0.2rem;\n    padding-bottom: 0.09rem;\n    border-bottom: 0.01rem solid #658b95;\n    color: #658b95;\n    font-size: 0.2rem;\n    font-weight: bold; }\n  .main .itemTitle {\n    margin-top: 0.2rem;\n    margin-bottom: 0.14rem;\n    color: #787878; }\n  .main .description {\n    margin-top: 0.1rem;\n    padding-left: 0.19rem;\n    background: url(\"https://img.alicdn.com/imgextra/i3/1086204413/TB2sXogaqi5V1BjSspnXXa.3XXa_!!1086204413.png\") 0 3px no-repeat;\n    line-height: 1.4em; }\n", ""]);
+	exports.push([module.id, ".main {\n  height: 100%;\n  padding: 0.29rem 0.43rem 0.43rem 0.36rem; }\n  .main .title {\n    margin-bottom: 0.2rem;\n    padding-bottom: 0.09rem;\n    border-bottom: 0.01rem solid #658b95;\n    color: #658b95;\n    font-weight: bold; }\n  .main .itemTitle {\n    margin-top: 0.2rem;\n    margin-bottom: 0.14rem;\n    color: #787878; }\n  .main .description {\n    margin-top: 0.1rem;\n    padding-left: 0.19rem;\n    background: url(\"https://img.alicdn.com/imgextra/i3/1086204413/TB2sXogaqi5V1BjSspnXXa.3XXa_!!1086204413.png\") 0 3px no-repeat;\n    line-height: 1.4em; }\n", ""]);
 
 	// exports
 
