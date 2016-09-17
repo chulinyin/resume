@@ -33,27 +33,26 @@
 
 .main {
   height: 100%;
-  padding: 20px 30px 30px 25px;
+  padding: 0.29rem 0.43rem 0.43rem 0.36rem;
 
   .title{
-    margin-bottom: 14px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid #658b95;
+    margin-bottom: 0.2rem;
+    padding-bottom: 0.09rem;
+    border-bottom: 0.01rem solid #658b95;
     color:#658b95;
-    font-size: 14px;
+    font-size: 0.2rem;
     font-weight: bold;
   }
 
   .itemTitle{
-    margin-top: 14px;
-    margin-bottom: 10px;
+    margin-top: 0.2rem;
+    margin-bottom: 0.14rem;
     color: #787878;
-    font-size:12px;
   }
 
   .description{
-    margin-top: 7px;
-    padding-left: 13px;
+    margin-top: 0.1rem;
+    padding-left: 0.19rem;
     background: url( "https://img.alicdn.com/imgextra/i3/1086204413/TB2sXogaqi5V1BjSspnXXa.3XXa_!!1086204413.png" ) 0 3px no-repeat;
     line-height: 1.4em; 
   }

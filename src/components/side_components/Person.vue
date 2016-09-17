@@ -18,10 +18,10 @@
 
 <style lang="sass" scoped>
 	.person{
-		margin-top: 39px;
+		margin-top: 0.57rem;
 		
 		.job{
-			margin-top: 18px; 
+			margin-top: 0.26rem; 
 		}
 	}
 </style>

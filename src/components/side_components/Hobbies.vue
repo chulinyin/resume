@@ -26,12 +26,12 @@ export default {
 <style lang="sass" scoped>
 
 	.hobbies{
-		margin-top: 60px;
+		margin-top: 0.87rem;
 		
 		.title{
-			margin-bottom: 20px;
-			padding-bottom: 6px;
-			border-bottom: 1px solid #fff;
+			margin-bottom: 0.29rem;
+			padding-bottom: 0.09rem;
+			border-bottom: 0.01rem solid #fff;
 		}
 		ul{
 			display: flex;
@@ -42,9 +42,9 @@ export default {
 			flex-direction: column;
 	
 			.icon{
-				width: 25px;
-				height: 25px;
-				margin-bottom: 18px;
+				width: 0.36rem;
+				height: 0.36rem;
+				margin-bottom: 0.26rem;
 			}
 		}
 	}

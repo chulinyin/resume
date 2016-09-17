@@ -29,6 +29,6 @@
 
 <style lang='sass' scoped>	
 	.eduBcgs{
-		margin: 22px 0;
+		margin: 0.32rem 0;
 	}
 </style>

@@ -23,15 +23,15 @@
 
 	/*let two columns have same height*/
 	.resume{
-		width: 690px;
-		margin: 50px auto 100px auto;
+		width: 10.0rem;
+		margin: 0.72rem auto 1.45rem auto;
 		overflow: hidden;
-		box-shadow: 0px 30px 60px 0px #D3DDE2;
+		box-shadow: 0 0.43rem 0.87rem 0 #D3DDE2;
 		background-color: #fff;
 
 		.main,.side{
-			padding-bottom: 999px;
-			margin-bottom: -999px;
+			padding-bottom: 14.48rem;
+			margin-bottom: -14.48rem;
 		}
 
 		.side{

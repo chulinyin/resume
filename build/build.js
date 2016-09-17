@@ -10387,7 +10387,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: #ECF0F1; }\n\n/*let two columns have same height*/\n.resume {\n  width: 690px;\n  margin: 50px auto 100px auto;\n  overflow: hidden;\n  box-shadow: 0px 30px 60px 0px #D3DDE2;\n  background-color: #fff; }\n  .resume .main, .resume .side {\n    padding-bottom: 999px;\n    margin-bottom: -999px; }\n  .resume .side {\n    float: left; }\n  .resume .main {\n    overflow: hidden; }\n", ""]);
+	exports.push([module.id, "body {\n  background-color: #ECF0F1; }\n\n/*let two columns have same height*/\n.resume {\n  width: 10.0rem;\n  margin: 0.72rem auto 1.45rem auto;\n  overflow: hidden;\n  box-shadow: 0 0.43rem 0.87rem 0 #D3DDE2;\n  background-color: #fff; }\n  .resume .main, .resume .side {\n    padding-bottom: 14.48rem;\n    margin-bottom: -14.48rem; }\n  .resume .side {\n    float: left; }\n  .resume .main {\n    overflow: hidden; }\n", ""]);
 
 	// exports
 
@@ -10785,7 +10785,7 @@
 
 
 	// module
-	exports.push([module.id, ".side {\n  width: 224px;\n  padding-left: 18px;\n  padding-right: 18px;\n  padding-top: 75px;\n  color: #fff;\n  background-color: #9DAEB2; }\n", ""]);
+	exports.push([module.id, ".side {\n  width: 3.25rem;\n  padding-left: 0.26rem;\n  padding-right: 0.26rem;\n  padding-top: 1.09rem;\n  color: #fff;\n  background-color: #9DAEB2; }\n", ""]);
 
 	// exports
 
@@ -11085,7 +11085,7 @@
 
 
 	// module
-	exports.push([module.id, ".person[_v-1a683290] {\n  margin-top: 39px; }\n  .person .job[_v-1a683290] {\n    margin-top: 18px; }\n", ""]);
+	exports.push([module.id, ".person[_v-1a683290] {\n  margin-top: 0.57rem; }\n  .person .job[_v-1a683290] {\n    margin-top: 0.26rem; }\n", ""]);
 
 	// exports
 
@@ -11172,7 +11172,7 @@
 
 
 	// module
-	exports.push([module.id, ".infors[_v-1938e22c] {\n  margin-top: 60px; }\n  .infors .title[_v-1938e22c] {\n    margin-bottom: 20px;\n    padding-bottom: 6px;\n    border-bottom: 1px solid #fff; }\n  .infors .infor[_v-1938e22c] {\n    height: 25px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    margin-top: 6px; }\n    .infors .infor .icon[_v-1938e22c] {\n      width: 25px;\n      height: 25px;\n      margin-right: 10px; }\n", ""]);
+	exports.push([module.id, ".infors[_v-1938e22c] {\n  margin-top: 0.87rem; }\n  .infors .title[_v-1938e22c] {\n    margin-bottom: 0.29rem;\n    padding-bottom: 0.09rem;\n    border-bottom: 0.01rem solid #fff; }\n  .infors .infor[_v-1938e22c] {\n    height: 0.36rem;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    margin-top: 0.09rem; }\n    .infors .infor .icon[_v-1938e22c] {\n      width: 0.36rem;\n      height: 0.36rem;\n      margin-right: 0.14rem; }\n", ""]);
 
 	// exports
 
@@ -11259,7 +11259,7 @@
 
 
 	// module
-	exports.push([module.id, ".skills[_v-2b348d25] {\n  margin-top: 60px; }\n  .skills .title[_v-2b348d25] {\n    margin-bottom: 20px;\n    padding-bottom: 6px;\n    border-bottom: 1px solid #fff; }\n  .skills .skill div[_v-2b348d25] {\n    width: 188px;\n    height: 8px;\n    margin-top: 5px;\n    margin-bottom: 13px;\n    background-color: #fff; }\n    .skills .skill div p[_v-2b348d25] {\n      height: 100%;\n      background-color: #becdd5; }\n", ""]);
+	exports.push([module.id, ".skills[_v-2b348d25] {\n  margin-top: 0.87rem; }\n  .skills .title[_v-2b348d25] {\n    margin-bottom: 0.29rem;\n    padding-bottom: 0.09rem;\n    border-bottom: 0.01rem solid #fff; }\n  .skills .skill div[_v-2b348d25] {\n    width: 2.72rem;\n    height: 0.12rem;\n    margin-top: 0.07rem;\n    margin-bottom: 0.19rem;\n    background-color: #fff; }\n    .skills .skill div p[_v-2b348d25] {\n      height: 100%;\n      background-color: #becdd5; }\n", ""]);
 
 	// exports
 
@@ -11346,7 +11346,7 @@
 
 
 	// module
-	exports.push([module.id, ".hobbies[_v-51cd0ac6] {\n  margin-top: 60px; }\n  .hobbies .title[_v-51cd0ac6] {\n    margin-bottom: 20px;\n    padding-bottom: 6px;\n    border-bottom: 1px solid #fff; }\n  .hobbies ul[_v-51cd0ac6] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between; }\n  .hobbies .hobby[_v-51cd0ac6] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column; }\n    .hobbies .hobby .icon[_v-51cd0ac6] {\n      width: 25px;\n      height: 25px;\n      margin-bottom: 18px; }\n", ""]);
+	exports.push([module.id, ".hobbies[_v-51cd0ac6] {\n  margin-top: 0.87rem; }\n  .hobbies .title[_v-51cd0ac6] {\n    margin-bottom: 0.29rem;\n    padding-bottom: 0.09rem;\n    border-bottom: 0.01rem solid #fff; }\n  .hobbies ul[_v-51cd0ac6] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between; }\n  .hobbies .hobby[_v-51cd0ac6] {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column; }\n    .hobbies .hobby .icon[_v-51cd0ac6] {\n      width: 0.36rem;\n      height: 0.36rem;\n      margin-bottom: 0.26rem; }\n", ""]);
 
 	// exports
 
@@ -11439,7 +11439,7 @@
 
 
 	// module
-	exports.push([module.id, ".main {\n  height: 100%;\n  padding: 20px 30px 30px 25px; }\n  .main .title {\n    margin-bottom: 14px;\n    padding-bottom: 6px;\n    border-bottom: 1px solid #658b95;\n    color: #658b95;\n    font-size: 14px;\n    font-weight: bold; }\n  .main .itemTitle {\n    margin-top: 14px;\n    margin-bottom: 10px;\n    color: #787878;\n    font-size: 12px; }\n  .main .description {\n    margin-top: 7px;\n    padding-left: 13px;\n    background: url(\"https://img.alicdn.com/imgextra/i3/1086204413/TB2sXogaqi5V1BjSspnXXa.3XXa_!!1086204413.png\") 0 3px no-repeat;\n    line-height: 1.4em; }\n", ""]);
+	exports.push([module.id, ".main {\n  height: 100%;\n  padding: 0.29rem 0.43rem 0.43rem 0.36rem; }\n  .main .title {\n    margin-bottom: 0.2rem;\n    padding-bottom: 0.09rem;\n    border-bottom: 0.01rem solid #658b95;\n    color: #658b95;\n    font-size: 0.2rem;\n    font-weight: bold; }\n  .main .itemTitle {\n    margin-top: 0.2rem;\n    margin-bottom: 0.14rem;\n    color: #787878; }\n  .main .description {\n    margin-top: 0.1rem;\n    padding-left: 0.19rem;\n    background: url(\"https://img.alicdn.com/imgextra/i3/1086204413/TB2sXogaqi5V1BjSspnXXa.3XXa_!!1086204413.png\") 0 3px no-repeat;\n    line-height: 1.4em; }\n", ""]);
 
 	// exports
 
@@ -11547,7 +11547,7 @@
 
 
 	// module
-	exports.push([module.id, ".projExps[_v-04cf9696] {\n  margin: 22px 0; }\n", ""]);
+	exports.push([module.id, ".projExps[_v-04cf9696] {\n  margin: 0.32rem 0; }\n", ""]);
 
 	// exports
 
@@ -11721,7 +11721,7 @@
 
 
 	// module
-	exports.push([module.id, ".eduBcgs[_v-109f4fc2] {\n  margin: 22px 0; }\n", ""]);
+	exports.push([module.id, ".eduBcgs[_v-109f4fc2] {\n  margin: 0.32rem 0; }\n", ""]);
 
 	// exports
 
@@ -11808,7 +11808,7 @@
 
 
 	// module
-	exports.push([module.id, ".personalIntros[_v-47cfe4b8] {\n  margin: 22px 0; }\n", ""]);
+	exports.push([module.id, ".personalIntros[_v-47cfe4b8] {\n  margin: 0.32rem 0; }\n", ""]);
 
 	// exports
 

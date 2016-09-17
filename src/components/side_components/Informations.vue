@@ -26,24 +26,24 @@
 <style lang="sass" scoped>
 
 	.infors{
-		margin-top: 60px;
+		margin-top: 0.87rem;
 		
 		.title{
-			margin-bottom: 20px;
-			padding-bottom: 6px;
-			border-bottom: 1px solid #fff;
+			margin-bottom: 0.29rem;
+			padding-bottom: 0.09rem;
+			border-bottom: 0.01rem solid #fff;
 		}
 		
 		.infor{
-			height: 25px;
+			height: 0.36rem;
 			display: flex;
 			align-items: center;
-			margin-top: 6px;
+			margin-top: 0.09rem;
 
 			.icon{
-				width: 25px;
-				height: 25px;
-				margin-right: 10px;
+				width: 0.36rem;
+				height: 0.36rem;
+				margin-right: 0.14rem;
 			}
 		}
 	}

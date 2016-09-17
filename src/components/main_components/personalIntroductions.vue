@@ -24,6 +24,6 @@
 
 <style lang='sass' scoped>
 	.personalIntros{
-		margin: 22px 0;
+		margin: 0.32rem 0;
 	}
 </style>

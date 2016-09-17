@@ -25,21 +25,21 @@
 <style lang='sass' scoped>
 
 	.skills{
-		margin-top: 60px;
+		margin-top: 0.87rem;
 		
 		.title{
-			margin-bottom: 20px;
-			padding-bottom: 6px;
-			border-bottom: 1px solid #fff;
+			margin-bottom: 0.29rem;
+			padding-bottom: 0.09rem;
+			border-bottom: 0.01rem solid #fff;
 		}
 
 		.skill{
 
 			div{
-				width: 188px;
-				height: 8px;
-				margin-top: 5px;
-				margin-bottom: 13px;
+				width: 2.72rem;
+				height: 0.12rem;
+				margin-top: 0.07rem;
+				margin-bottom: 0.19rem;
 				background-color: #fff;
 				
 				p{

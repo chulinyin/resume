@@ -31,10 +31,10 @@
 <style lang="sass" >
 
 .side {
-  width: 224px;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-top: 75px;
+  width: 3.25rem;
+  padding-left: 0.26rem;
+  padding-right: 0.26rem;
+  padding-top: 1.09rem;
   color: #fff;
   background-color: #9DAEB2;
 }
