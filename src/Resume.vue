@@ -41,4 +41,20 @@
 			overflow: hidden;
 		}
 	}
+
+	@media screen and(max-width: 640px) {
+		.side{
+			display: none;
+		}
+	}
+	@media screen and(max-width: 1280px) {
+		[data-dpr="2"] .side{
+			display: none;
+		}
+	}
+	@media screen and(max-width: 1920px) {
+		[data-dpr="3"] .side{
+			display: none;
+		}
+	}  
 </style>

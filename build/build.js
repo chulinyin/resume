@@ -10387,7 +10387,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: #ECF0F1; }\n\n/*let two columns have same height*/\n.resume {\n  width: 10.0rem;\n  margin: 0.72rem auto 1.45rem auto;\n  overflow: hidden;\n  box-shadow: 0 0.43rem 0.87rem 0 #D3DDE2;\n  background-color: #fff; }\n  .resume .main, .resume .side {\n    padding-bottom: 14.48rem;\n    margin-bottom: -14.48rem; }\n  .resume .side {\n    float: left; }\n  .resume .main {\n    overflow: hidden; }\n", ""]);
+	exports.push([module.id, "body {\n  background-color: #ECF0F1; }\n\n/*let two columns have same height*/\n.resume {\n  width: 10.0rem;\n  margin: 0.72rem auto 1.45rem auto;\n  overflow: hidden;\n  box-shadow: 0 0.43rem 0.87rem 0 #D3DDE2;\n  background-color: #fff; }\n  .resume .main, .resume .side {\n    padding-bottom: 14.48rem;\n    margin-bottom: -14.48rem; }\n  .resume .side {\n    float: left; }\n  .resume .main {\n    overflow: hidden; }\n\n@media screen and (max-width: 640px) {\n  .side {\n    display: none; } }\n\n@media screen and (max-width: 1280px) {\n  [data-dpr=\"2\"] .side {\n    display: none; } }\n\n@media screen and (max-width: 1920px) {\n  [data-dpr=\"3\"] .side {\n    display: none; } }\n", ""]);
 
 	// exports
 
@@ -10915,7 +10915,7 @@
 			"icon": "",
 			"experiences": [
 				{
-					"title": "杭州淘粉吧网络技术——前端实习生（2016.06 –2016.09）",
+					"title": "杭州淘粉吧网络技术有限公司——前端实习生（2016.06 –2016.09）",
 					"descriptions": [
 						{
 							"description": "主要负责移动端活动页面开发，配合设计师实现视觉稿，与后端工程师协作完成页面需求。期间采用rem布局解决方案，实现移动端页面自适应。"
