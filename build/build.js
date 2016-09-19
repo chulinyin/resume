@@ -10336,7 +10336,7 @@
 	var __vue_script__, __vue_template__
 	__webpack_require__(4)
 	__vue_script__ = __webpack_require__(8)
-	__vue_template__ = __webpack_require__(60)
+	__vue_template__ = __webpack_require__(65)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
@@ -10387,7 +10387,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: #ECF0F1; }\n\n/*let two columns have same height*/\n.resume {\n  width: 10.0rem;\n  margin: 0.72rem auto 1.45rem auto;\n  overflow: hidden;\n  box-shadow: 0 0.43rem 0.87rem 0 #D3DDE2;\n  background-color: #fff; }\n  .resume .main, .resume .side {\n    padding-bottom: 14.48rem;\n    margin-bottom: -14.48rem; }\n  .resume .side {\n    float: left; }\n  .resume .main {\n    overflow: hidden; }\n\n@media screen and (max-width: 640px) {\n  .side {\n    display: none; } }\n\n@media screen and (max-width: 1280px) {\n  [data-dpr=\"2\"] .side {\n    display: none; } }\n\n@media screen and (max-width: 1920px) {\n  [data-dpr=\"3\"] .side {\n    display: none; } }\n", ""]);
+	exports.push([module.id, "body {\n  padding: 1.45rem 0;\n  background-color: #ECF0F1; }\n\n/*let two columns have same height*/\n.resume {\n  width: 10.0rem;\n  margin: 0 auto;\n  overflow: hidden;\n  box-shadow: 0 0.43rem 0.87rem 0 #D3DDE2;\n  background-color: #fff; }\n  .resume .main, .resume .side {\n    padding-bottom: 14.48rem;\n    margin-bottom: -14.48rem; }\n  .resume .side {\n    float: left; }\n  .resume .main {\n    overflow: hidden; }\n\n@media screen and (max-width: 640px) {\n  .side {\n    display: none; } }\n\n@media screen and (max-width: 1280px) {\n  [data-dpr=\"2\"] .side {\n    display: none; } }\n\n@media screen and (max-width: 1920px) {\n  [data-dpr=\"3\"] .side {\n    display: none; } }\n", ""]);
 
 	// exports
 
@@ -10718,12 +10718,17 @@
 
 	var _Main2 = _interopRequireDefault(_Main);
 
+	var _BackgroundCanvas = __webpack_require__(60);
+
+	var _BackgroundCanvas2 = _interopRequireDefault(_BackgroundCanvas);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = {
 	  components: {
 	    Side: _Side2.default,
-	    Main: _Main2.default
+	    Main: _Main2.default,
+	    BackgroundCanvas: _BackgroundCanvas2.default
 	  }
 	};
 
@@ -11439,7 +11444,7 @@
 
 
 	// module
-	exports.push([module.id, ".main {\n  height: 100%;\n  padding: 0.29rem 0.43rem 0.43rem 0.36rem; }\n  .main .title {\n    margin-bottom: 0.2rem;\n    padding-bottom: 0.09rem;\n    border-bottom: 0.01rem solid #658b95;\n    color: #658b95;\n    font-weight: bold; }\n  .main .itemTitle {\n    margin-top: 0.2rem;\n    margin-bottom: 0.14rem;\n    color: #787878; }\n  .main .description {\n    margin-top: 0.1rem;\n    padding-left: 0.19rem;\n    background: url(\"https://img.alicdn.com/imgextra/i3/1086204413/TB2sXogaqi5V1BjSspnXXa.3XXa_!!1086204413.png\") 0 3px no-repeat;\n    line-height: 1.4em; }\n", ""]);
+	exports.push([module.id, ".main {\n  height: 100%;\n  padding: 0.29rem 0.43rem 0.43rem 0.36rem; }\n  .main .title {\n    margin-bottom: 0.2rem;\n    padding-bottom: 0.09rem;\n    border-bottom: 0.01rem solid #658b95;\n    color: #658b95;\n    font-weight: bold; }\n  .main .itemTitle {\n    margin-top: 0.2rem;\n    margin-bottom: 0.14rem;\n    color: #787878; }\n  .main .description {\n    margin-top: 0.1rem;\n    padding-left: 0.19rem;\n    background: url(\"https://img.alicdn.com/imgextra/i3/1086204413/TB2sXogaqi5V1BjSspnXXa.3XXa_!!1086204413.png\") 0 0.04rem no-repeat;\n    line-height: 1.4em; }\n", ""]);
 
 	// exports
 
@@ -11845,9 +11850,256 @@
 
 /***/ },
 /* 60 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(61)
+	__vue_script__ = __webpack_require__(63)
+	__vue_template__ = __webpack_require__(64)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) { (typeof module.exports === "function" ? module.exports.options : module.exports).template = __vue_template__ }
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "F:\\H\\WebFontEnd\\E-Project\\WebFrontProject\\webApp\\resume\\src\\components\\BackgroundCanvas.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 61 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(62);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(7)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-1768d92b&file=BackgroundCanvas.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./BackgroundCanvas.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-1768d92b&file=BackgroundCanvas.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./BackgroundCanvas.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 62 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(6)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "\r\n  .canvas {\r\n      position: fixed;\r\n      top: 0;\r\n      left: 0;\r\n      z-index: -1;\r\n  }\r\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 63 */
 /***/ function(module, exports) {
 
-	module.exports = "\r\n\t<div class=\"resume \">\r\n\t\t<side></side>\r\n\t\t<main></main>\r\n\t</div>\r\n";
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  ready: function ready() {
+	    var canvas = document.getElementById('canvas'),
+	        ctx = canvas.getContext('2d'),
+	        width = window.innerWidth,
+	        height = window.innerHeight,
+	        mouse = {
+	      x: width / 2,
+	      y: height / 2
+	    },
+	        nodes = void 0,
+	        lines = void 0;
+
+	    canvas.width = width;
+	    canvas.height = height;
+
+	    var iniNode = function iniNode(node, factor) {
+	      var rnd = function rnd() {
+	        var produce = function produce(min, max) {
+	          return min > max ? false : Math.random() * (max - min) + min;
+	        };
+
+	        var num = void 0,
+	            len = arguments.length;
+
+	        if (len == 2) {
+	          num = produce(arguments.length <= 0 ? undefined : arguments[0], arguments.length <= 1 ? undefined : arguments[1]);
+	        } else if (len == 4) {
+	          var flag = Math.random();
+	          num = flag < 0.5 ? produce(arguments.length <= 0 ? undefined : arguments[0], arguments.length <= 1 ? undefined : arguments[1]) : produce(arguments.length <= 2 ? undefined : arguments[2], arguments.length <= 3 ? undefined : arguments[3]);
+	        } else {
+	          num = Math.random;
+	        }
+	        return num;
+	      };
+	      var rnd1 = rnd.bind(null, -0.5, -0.4, 0.4, 0.5);
+	      node.vx = factor * rnd1();
+	      node.vy = factor * rnd1();
+	      node.period = Math.random() * 120;
+	    };
+
+	    var createNodes = function createNodes() {
+	      nodes = [];
+	      lines = [];
+	      for (var i = 0; i < 50; i++) {
+
+	        var R = Math.floor(Math.random() * 100) + 155,
+	            G = Math.floor(Math.random() * 100) + 155,
+	            B = Math.floor(Math.random() * 100) + 155,
+	            color = "rgb(" + R + "," + G + "," + B + ")";
+
+	        var node = {
+	          x: (Math.random() - 0.5) * 300 + mouse.x,
+	          y: (Math.random() - 0.5) * 300 + mouse.y,
+	          radius: 2 * Math.random() + 1,
+	          color: color
+	        };
+	        iniNode(node, 2);
+	        nodes.push(node);
+	      }
+
+	      nodes.forEach(function (node1, index) {
+	        nodes.slice(index + 1).forEach(function (node2) {
+	          lines.push({
+	            from: node1,
+	            to: node2
+	          });
+	        });
+	      });
+	    };
+
+	    var render = function render(ctx) {
+	      ctx.fillStyle = '#fff';
+	      ctx.clearRect(0, 0, width, height);
+	      lines.forEach(function (_ref) {
+	        var from = _ref.from;
+	        var to = _ref.to;
+
+	        var lineLength = Math.pow(from.x - to.x, 2) + Math.pow(from.y - to.y, 2),
+	            limit = 10000,
+	            factor = 1 - lineLength / limit;
+	        if (lineLength > limit) {
+	          return;
+	        }
+
+	        ctx.lineWidth = factor;
+	        ctx.globalAlpha = factor;
+	        ctx.strokeStyle = from.color;
+
+	        ctx.beginPath();
+	        ctx.moveTo(from.x, from.y);
+	        ctx.lineTo(to.x, to.y);
+	        ctx.stroke();
+	      });
+	      ctx.globalAlpha = 1;
+
+	      nodes.forEach(function (_ref2) {
+	        var x = _ref2.x;
+	        var y = _ref2.y;
+	        var radius = _ref2.radius;
+	        var color = _ref2.color;
+
+	        ctx.fillStyle = color;
+	        ctx.beginPath();
+	        ctx.arc(x, y, radius, 0, 2 * Math.PI);
+	        ctx.fill();
+	      });
+
+	      var x = mouse.x,
+	          y = mouse.y,
+	          gradient = ctx.createRadialGradient(x, y, 1, x, y, 200);
+
+	      gradient.addColorStop(0, 'rgba(236,240,241,0)');
+	      gradient.addColorStop(1, 'rgba(236,240,241,1)');
+	      ctx.fillStyle = gradient;
+	      ctx.arc(x, y, 360, 0, 2 * Math.PI);
+	      ctx.fill();
+	    };
+
+	    var animation = function animation() {
+	      var invert = function invert(node, dir) {
+	        return node[dir] = mouse[dir];
+	      };
+	      nodes.forEach(function (node) {
+	        Math.abs(node.x - mouse.x) > 250 && invert(node, 'x');
+	        Math.abs(node.y - mouse.y) > 250 && invert(node, 'y');
+	        node.period--;
+	        switch (true) {
+	          case node.period < 0:
+	            iniNode(node, 2);
+	            break;
+	          case node.period < 50:
+	            var factor1 = node.period / 50;
+	            node.x += node.vx * factor1;
+	            node.y += node.vy * factor1;
+	            break;
+	          case node.period < 80:
+	            node.x += node.vx;
+	            node.y += node.vy;
+	            break;
+	          case node.period < 120:
+	            var factor2 = 1 - (node.period - 40) / 80;
+	            node.x += node.vx * factor2;
+	            node.y += node.vy * factor2;
+	            break;
+	          default:
+	            return;
+	        }
+	      });
+	      render(ctx);
+	      requestAnimationFrame(animation);
+	    };
+
+	    window.addEventListener('mousemove', function (event) {
+	      var x = event.clientX,
+	          y = event.clientY,
+	          offsetX = x - mouse.x,
+	          offsetY = y - mouse.y;
+	      if (Math.pow(offsetX, 2) + Math.pow(offsetY, 2) > 100) {
+	        mouse.x = x;
+	        mouse.y = y;
+	      }
+	    });
+	    createNodes();
+	    render(ctx);
+	    animation();
+	  }
+	};
+
+/***/ },
+/* 64 */
+/***/ function(module, exports) {
+
+	module.exports = "\r\n  <canvas id=\"canvas\" class=\"canvas\"></canvas>\r\n";
+
+/***/ },
+/* 65 */
+/***/ function(module, exports) {
+
+	module.exports = "\r\n\t<background-canvas></background-canvas>\r\n\t<div class=\"resume \">\r\n\t\t<side></side>\r\n\t\t<main></main>\r\n\t</div>\r\n";
 
 /***/ }
 /******/ ]);

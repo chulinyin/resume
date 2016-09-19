@@ -1,4 +1,5 @@
 <template>
+	<background-canvas></background-canvas>
 	<div class="resume ">
 		<side></side>
 		<main></main>
@@ -8,23 +9,26 @@
 <script>
 	import Side from './components/Side.vue'
 	import Main from './components/Main.vue'
+	import BackgroundCanvas from './components/BackgroundCanvas.vue'
 	export default {
 	  components: {
 	    Side,
-	    Main
+	    Main,
+	    BackgroundCanvas
 	  }
 	}
 </script>
 
 <style lang='sass'>
 	body{
-		background-color: #ECF0F1 ;
+		padding: 1.45rem 0;
+		background-color: #ECF0F1;
 	}
 
 	/*let two columns have same height*/
 	.resume{
 		width: 10.0rem;
-		margin: 0.72rem auto 1.45rem auto;
+		margin: 0 auto;
 		overflow: hidden;
 		box-shadow: 0 0.43rem 0.87rem 0 #D3DDE2;
 		background-color: #fff;

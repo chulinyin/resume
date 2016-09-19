@@ -52,7 +52,7 @@
   .description{
     margin-top: 0.1rem;
     padding-left: 0.19rem;
-    background: url( "https://img.alicdn.com/imgextra/i3/1086204413/TB2sXogaqi5V1BjSspnXXa.3XXa_!!1086204413.png" ) 0 3px no-repeat;
+    background: url( "https://img.alicdn.com/imgextra/i3/1086204413/TB2sXogaqi5V1BjSspnXXa.3XXa_!!1086204413.png" ) 0 0.04rem no-repeat;
     line-height: 1.4em; 
   }
   
