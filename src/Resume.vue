@@ -50,15 +50,24 @@
 		.side{
 			display: none;
 		}
+		.resume{
+			width: 8rem;
+		}
 	}
 	@media screen and(max-width: 1280px) {
 		[data-dpr="2"] .side{
 			display: none;
 		}
+		[data-dpr="3"] .resume{
+			width: 8rem;
+		}
 	}
 	@media screen and(max-width: 1920px) {
 		[data-dpr="3"] .side{
 			display: none;
+		}
+		[data-dpr="3"] .resume{
+			width: 8rem;
 		}
 	}  
 </style>
