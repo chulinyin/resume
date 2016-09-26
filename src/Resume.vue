@@ -47,27 +47,45 @@
 	}
 
 	@media screen and(max-width: 640px) {
-		.side{
-			display: none;
-		}
-		.resume{
-			width: 8rem;
+		body{
+			padding: 0;
+
+			.resume{
+				width: 10rem;
+				padding: 0.14rem 0.29rem;
+
+				.side{
+					display: none;
+				}
+			}
 		}
 	}
 	@media screen and(max-width: 1280px) {
-		[data-dpr="2"] .side{
-			display: none;
-		}
-		[data-dpr="3"] .resume{
-			width: 8rem;
+		[data-dpr="2"] body{
+			padding: 0;
+
+			.resume{
+				width: 10rem;
+				padding: 0.14rem 0.29rem;
+				
+				.side{
+					display: none;
+				}
+			}
 		}
 	}
 	@media screen and(max-width: 1920px) {
-		[data-dpr="3"] .side{
-			display: none;
-		}
-		[data-dpr="3"] .resume{
-			width: 8rem;
+		[data-dpr="3"] body{
+			padding: 0;
+
+			.resume{
+				width: 10rem;
+				padding: 0.14rem 0.29rem;
+				
+				.side{
+					display: none;
+				}
+			}
 		}
 	}  
 </style>

@@ -3,7 +3,7 @@
   <canvas id="canvas" class="canvas"></canvas>
 </template>
 <script>
-  /* copy from https://github.com/ycwalker/CMS-of-Blog/blob/master/src/components/MyCanvas.vue */
+  /* copy from https://github.com/ycwalker/CMS-of-Blog/blob/master/src/components/MyCanvas.vue  */
   export default{
     ready(){
       let canvas = document.getElementById('canvas'),

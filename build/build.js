@@ -10387,7 +10387,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  padding: 1.45rem 0;\n  background-color: #ECF0F1; }\n\n/*let two columns have same height*/\n.resume {\n  width: 10.0rem;\n  margin: 0 auto;\n  overflow: hidden;\n  box-shadow: 0 0.43rem 0.87rem 0 #D3DDE2;\n  background-color: #fff; }\n  .resume .main, .resume .side {\n    padding-bottom: 14.48rem;\n    margin-bottom: -14.48rem; }\n  .resume .side {\n    float: left; }\n  .resume .main {\n    overflow: hidden; }\n\n@media screen and (max-width: 640px) {\n  .side {\n    display: none; }\n  .resume {\n    width: 8rem; } }\n\n@media screen and (max-width: 1280px) {\n  [data-dpr=\"2\"] .side {\n    display: none; }\n  [data-dpr=\"3\"] .resume {\n    width: 8rem; } }\n\n@media screen and (max-width: 1920px) {\n  [data-dpr=\"3\"] .side {\n    display: none; }\n  [data-dpr=\"3\"] .resume {\n    width: 8rem; } }\n", ""]);
+	exports.push([module.id, "body {\n  padding: 1.45rem 0;\n  background-color: #ECF0F1; }\n\n/*let two columns have same height*/\n.resume {\n  width: 10.0rem;\n  margin: 0 auto;\n  overflow: hidden;\n  box-shadow: 0 0.43rem 0.87rem 0 #D3DDE2;\n  background-color: #fff; }\n  .resume .main, .resume .side {\n    padding-bottom: 14.48rem;\n    margin-bottom: -14.48rem; }\n  .resume .side {\n    float: left; }\n  .resume .main {\n    overflow: hidden; }\n\n@media screen and (max-width: 640px) {\n  body {\n    padding: 0; }\n    body .resume {\n      width: 10rem;\n      padding: 0.14rem 0.29rem; }\n      body .resume .side {\n        display: none; } }\n\n@media screen and (max-width: 1280px) {\n  [data-dpr=\"2\"] body {\n    padding: 0; }\n    [data-dpr=\"2\"] body .resume {\n      width: 10rem;\n      padding: 0.14rem 0.29rem; }\n      [data-dpr=\"2\"] body .resume .side {\n        display: none; } }\n\n@media screen and (max-width: 1920px) {\n  [data-dpr=\"3\"] body {\n    padding: 0; }\n    [data-dpr=\"3\"] body .resume {\n      width: 10rem;\n      padding: 0.14rem 0.29rem; }\n      [data-dpr=\"3\"] body .resume .side {\n        display: none; } }\n", ""]);
 
 	// exports
 
@@ -10946,7 +10946,7 @@
 							"description": "系统学习前端工程师所需的六门必修课程：页面制作、JavaScript程序设计、DOM编程艺术、页面架构、产品前端架构、Web前端开发实践，并获得优秀结业证书。"
 						},
 						{
-							"description": "前端基础扎实，了解H5和CSS3，能,熟练使用原生API进行网页开发。"
+							"description": "前端基础扎实，了解H5和CSS3，能熟练使用原生API进行网页开发。"
 						}
 					]
 				}
@@ -10997,7 +10997,7 @@
 					"title": "中国计量大学——自动化专业（2013.09-2017.06）",
 					"descriptions": [
 						{
-							"description": "GPA：3.72/5.0 "
+							"description": "GPA：3.70/5.0 "
 						},
 						{
 							"description": "奖学金：2次国家励志奖学金、1次校二等奖学金、5次校三等奖学金"
@@ -11444,7 +11444,7 @@
 
 
 	// module
-	exports.push([module.id, ".main {\n  height: 100%;\n  padding: 0.29rem 0.43rem 0.43rem 0.36rem; }\n  .main .title {\n    margin-bottom: 0.2rem;\n    padding-bottom: 0.09rem;\n    border-bottom: 0.01rem solid #658b95;\n    color: #658b95;\n    font-weight: bold; }\n  .main .itemTitle {\n    margin-top: 0.2rem;\n    margin-bottom: 0.14rem;\n    color: #787878; }\n  .main .description {\n    margin-top: 0.1rem;\n    padding-left: 0.19rem;\n    background: url(\"https://img.alicdn.com/imgextra/i3/1086204413/TB2sXogaqi5V1BjSspnXXa.3XXa_!!1086204413.png\") 0 0.04rem no-repeat;\n    line-height: 1.4em; }\n", ""]);
+	exports.push([module.id, ".main {\n  height: 100%;\n  padding: 0.29rem 0.43rem 0.43rem 0.36rem; }\n  .main .title {\n    margin-bottom: 0.2rem;\n    padding-bottom: 0.09rem;\n    border-bottom: 0.01rem solid #658b95;\n    color: #658b95;\n    font-weight: bold; }\n  .main .itemTitle {\n    margin-top: 0.2rem;\n    margin-bottom: 0.14rem;\n    color: #787878; }\n  .main .description {\n    margin-top: 0.1rem;\n    padding-left: 0.9em;\n    background: url(\"https://img.alicdn.com/imgextra/i2/1086204413/TB2b1LDap6AQeBjSZFIXXctXpXa_!!1086204413.png\") 0 0.4em/0.8em 0.8em no-repeat;\n    line-height: 1.4em; }\n", ""]);
 
 	// exports
 
