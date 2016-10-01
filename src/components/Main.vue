@@ -38,7 +38,7 @@
   .title{
     margin-bottom: 0.2rem;
     padding-bottom: 0.09rem;
-    border-bottom: 0.01rem solid #658b95;
+    border-bottom: 1px solid #658b95;
     color: #658b95;
     font-weight: bold;
   }
@@ -52,7 +52,7 @@
   .description{
     margin-top: 0.1rem;
     padding-left: 0.9em;
-    background: url( "https://img.alicdn.com/imgextra/i2/1086204413/TB2b1LDap6AQeBjSZFIXXctXpXa_!!1086204413.png" ) 0 0.4em/0.8em 0.8em no-repeat;
+    background: url( "https://img.alicdn.com/imgextra/i2/1086204413/TB2b1LDap6AQeBjSZFIXXctXpXa_!!1086204413.png" ) 0 0.25em/0.8em 0.8em no-repeat;
     line-height: 1.4em; 
   }
   

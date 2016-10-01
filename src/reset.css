@@ -31,7 +31,7 @@ a,a:hover{color:#404040;}
 [data-dpr="2"] .fs16{font-size: 32px;}
 [data-dpr="3"] .fs16{font-size: 48px;}
 .fs24{font-size:24px;}
-[data-dpr="2"] .fs16{font-size: 48px;}
-[data-dpr="3"] .fs16{font-size: 72px;}
+[data-dpr="2"] .fs24{font-size: 48px;}
+[data-dpr="3"] .fs24{font-size: 72px;}
 .bold{font-weight: bold;}
 

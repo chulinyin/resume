@@ -31,7 +31,7 @@
 		.title{
 			margin-bottom: 0.29rem;
 			padding-bottom: 0.09rem;
-			border-bottom: 0.01rem solid #fff;
+			border-bottom: 1px solid #fff;
 		}
 		
 		.infor{
