@@ -1,4 +1,4 @@
-## [Demo](chulinyin/resume.com)
+## [Demo](http://www.chulinyin.com/resume)
 
 ## What is it
 It is  a resume  which is created by vue and webpack. And its content can be changed by edit the file of resumeData.json.
