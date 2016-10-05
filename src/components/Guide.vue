@@ -2,7 +2,7 @@
 	<div class="guide" v-on:click='rotate180'>
 		<svg v-bind:class="{ 'rotate180': isRotate }" version="1.1"
 		 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-		 x="0px" y="0px" width="0.42rem" height="0.42rem" viewBox="0 0 42.7 42.7" enable-background="new 0 0 42.7 42.7"
+		 x="0px" y="0px"width="100%" height="100%" viewBox="0 0 42.7 42.7" enable-background="new 0 0 42.7 42.7"
 		 xml:space="preserve">
 			<defs>
 			</defs>
@@ -40,6 +40,8 @@
 		top: 2%;
 		left: 1.5%;
 		z-index: 999;
+		width:0.42rem;
+		height: 0.42rem;
 		font-size: 0;
 		animation: move 1s ease .5s 2 both;
 	}
