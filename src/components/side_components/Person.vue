@@ -16,7 +16,7 @@
 	}
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
 	.person{
 		margin-top: 0.57rem;
 		

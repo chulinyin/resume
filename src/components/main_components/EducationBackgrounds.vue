@@ -27,7 +27,7 @@
 </script>
 
 
-<style lang='sass' scoped>	
+<style lang='scss' scoped>	
 	.eduBcgs{
 		margin: 0.32rem 0;
 	}

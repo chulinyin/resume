@@ -23,7 +23,7 @@
 </script>
 
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
 
 	.infors{
 		margin-top: 0.87rem;

@@ -1,22 +1,25 @@
 <template>
+<div class="wrapper">
 	<background-canvas></background-canvas>
 	<div id="resume">
 		<guide @guide-rotate="ctrlSide"></guide>
-		<side v-show="condition" transition="slide"></side>
-		<main></main>
+		<Sidebar v-show="condition" transition="slide"></Sidebar>
+		<main-content></main-content>
 	</div>
+</div>
 </template>
 
 <script>
 	import Guide from './components/Guide.vue'
-	import Side from './components/Side.vue'
-	import Main from './components/Main.vue'
+	import Sidebar from './components/Side.vue'
+	import MainContent from './components/Main.vue'
 	import BackgroundCanvas from './components/BackgroundCanvas.vue'
 	export default {
+		// name: 'resume',
 	  components: {
 	  	Guide,
-	    Side,
-	    Main,
+	    Sidebar,
+	    MainContent,
 	    BackgroundCanvas
 	  },
 		data () {
@@ -32,7 +35,7 @@
 	}
 </script>
 
-<style lang='sass'>
+<style lang='scss'>
 	body{
 		padding: 1.45rem 0;
 		background-color: #ecf0f1;

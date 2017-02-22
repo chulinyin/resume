@@ -33,7 +33,7 @@
 	}
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
 	.guide{
 		display: inline-block;
 		position: fixed;

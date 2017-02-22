@@ -23,7 +23,7 @@ export default {
 </script>
 
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
 
 	.hobbies{
 		margin-top: 0.87rem;

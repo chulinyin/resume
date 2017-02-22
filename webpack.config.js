@@ -1,60 +1,75 @@
-// webpack.config.js
+var path = require('path')
+var webpack = require('webpack')
+
 module.exports = {
-  // entry point of our application
   entry: './src/main.js',
-  // where to place the compiled bundle
   output: {
-    path: './build',
+    path: path.resolve(__dirname, './dist'),
+    publicPath: '/dist/',
     filename: 'build.js'
   },
   module: {
-    // `loaders` is an array of loaders to use.
-    // here we are only configuring vue-loader
-    loaders: [
+    rules: [
       {
-        test: /\.vue$/, // a regex for matching all files that end in `.vue`
-        loader: 'vue'   // loader to use for matched files
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: {
+          loaders: {
+            // Since sass-loader (weirdly) has SCSS as its default parse mode, we map
+            // the "scss" and "sass" values for the lang attribute to the right configs here.
+            // other preprocessors should work out of the box, no loader config like this necessary.
+            'scss': 'vue-style-loader!css-loader!sass-loader',
+            'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
+          }
+          // other vue-loader options go here
+        }
       },
       {
         test: /\.js$/,
-        loader: 'babel',
+        loader: 'babel-loader',
         exclude: /node_modules/
       },
       {
-        test: /\.html$/,
-        loader: 'vue-html'
-      },
-      {
-        test: /\.json$/,
-        loader: 'json'
-      },
-      {
-        test: /\.css$/, 
-        loader: "style!css!autoprefixer"
-      },
-      { 
-        test: /\.(scss|sass)$/, 
-        loader: 'style!css!scss?sourceMap'
-      },
-      {
-        test: /\.(png|jpg|gif)$/,
-        loader: 'url',
-        query: {
-          // limit for base64 inlining in bytes
-          limit: 10000,
-          // custom naming format if file is larger than
-          // the threshold
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: 'file-loader',
+        options: {
           name: '[name].[ext]?[hash]'
         }
-      } 
+      }
     ]
   },
-  // vue: {
-  //   // use custom postcss plugins
-  //   postcss: [require('postcss-cssnext')()],
-  //   // disable vue-loader autoprefixing.
-  //   // this is a good idea since cssnext comes with it too.
-  //   autoprefixer: false
-  // }
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.common.js'
+    }
+  },
+  devServer: {
+    historyApiFallback: true,
+    noInfo: true
+  },
+  performance: {
+    hints: false
+  },
+  devtool: '#eval-source-map'
 }
 
+if (process.env.NODE_ENV === 'production') {
+  module.exports.devtool = '#source-map'
+  // http://vue-loader.vuejs.org/en/workflow/production.html
+  module.exports.plugins = (module.exports.plugins || []).concat([
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: '"production"'
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: true,
+      compress: {
+        warnings: false
+      }
+    }),
+    new webpack.LoaderOptionsPlugin({
+      minimize: true
+    })
+  ])
+}

@@ -27,7 +27,7 @@
 </script>
 
 
-<style lang='sass' scoped>
+<style lang='scss' scoped>
 	.schoolExps{
 		margin: 22px 0;
 	}

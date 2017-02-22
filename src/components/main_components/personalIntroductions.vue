@@ -22,7 +22,7 @@
 </script>
 
 
-<style lang='sass' scoped>
+<style lang='scss' scoped>
 	.personalIntros{
 		margin: 0.32rem 0;
 	}

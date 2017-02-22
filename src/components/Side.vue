@@ -28,7 +28,7 @@
   }
 </script>
 
-<style lang="sass" >
+<style lang="scss" >
 
 .side {
   width: 3.25rem;

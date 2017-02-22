@@ -13,7 +13,7 @@
   import ProjectExperiences from './main_components/ProjectExperiences.vue'
   import SchoolExperiences from './main_components/SchoolExperiences.vue'
   import EducationBackgrounds from './main_components/EducationBackgrounds.vue'
-   import personalIntroductions from './main_components/personalIntroductions.vue'
+  import personalIntroductions from './main_components/personalIntroductions.vue'
   
   export default {
     data () {
@@ -29,7 +29,7 @@
 </script>
 
 
-<style lang="sass">
+<style lang="scss">
 
 .main {
   height: 100%;
