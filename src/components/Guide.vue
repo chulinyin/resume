@@ -27,7 +27,7 @@
 			rotate180: function(){
 				this.isRotate = !this.isRotate;
 				 // 使父组件根据isRotate判断是否需要显示Side组件 
-				this.$dispatch('guide-rotate', this.isRotate);
+				this.$emit('guide-rotate', this.isRotate);
 			}
 		}
 	}
