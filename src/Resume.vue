@@ -15,7 +15,6 @@
 	import MainContent from './components/Main.vue'
 	import BackgroundCanvas from './components/BackgroundCanvas.vue'
 	export default {
-		// name: 'resume',
 	  components: {
 	  	Guide,
 	    Sidebar,
