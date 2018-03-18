@@ -23,6 +23,12 @@
         canvas.width = width
         canvas.height = height
 
+        /**
+         * [初始化一个节点对象，为节点对象添加随机vx,vy坐标（范围在半径0.8*f~1*f的圆环内），
+         *  随机周期（0～120）]
+         * @param  {[type]} node   [节点]
+         * @param  {[type]} factor [放大因子]
+         */
         const iniNode = (node, factor)=> {
           const rnd = (...args)=> {
             const produce = (min,max) => {
@@ -48,6 +54,8 @@
           node.period = Math.random() * 120
         }
 
+
+        // 在鼠标方圆150内，随机创建50个节点集合，以及由节点集合形成的线条集合
         const createNodes = ()=> {
           nodes = []
           lines = []
@@ -58,6 +66,8 @@
                 B = Math.floor(Math.random() * 100) + 155,
                 color = "rgb(" + R + "," + G + "," + B + ")"
 
+            // 节点坐标在以鼠标坐标为圆心，半径为150的圆内随机点，
+            // 节点半径为1～2
             let node = {
                 x: (Math.random() - 0.5) * 300 + mouse.x,
                 y: (Math.random() - 0.5) * 300 + mouse.y,
@@ -67,7 +77,8 @@
             iniNode(node, 2)
             nodes.push(node)
           }
-
+          
+          // 每个节点都连接到其余节点，并将始末节点记录到线条集合中
           nodes.forEach((node1, index)=> {
             nodes.slice(index + 1).forEach((node2)=> {
               lines.push({
@@ -81,6 +92,8 @@
         const render = (ctx)=> {
           ctx.fillStyle = '#fff'
           ctx.clearRect(0, 0, width, height)
+
+          // 画线条
           lines.forEach(({from, to})=> {
             let lineLength = Math.pow((from.x - to.x), 2) +
                             Math.pow((from.y - to.y), 2),
@@ -101,6 +114,7 @@
           })
           ctx.globalAlpha = 1
 
+          // 画节点
           nodes.forEach(function ({x, y, radius, color,}) {
             ctx.fillStyle = color
             ctx.beginPath()
@@ -108,6 +122,7 @@
             ctx.fill()
           })
 
+          // 在鼠标方圆360内画创建一个渐变圆（遮罩的功能）
           let x = mouse.x,
               y = mouse.y,
               gradient = ctx
@@ -120,9 +135,12 @@
           ctx.fill()
         }
 
+        // 改变节点坐标，当移动先慢后快再慢，到120次后，消失并重新初始化节点
         const animation = ()=> {
           const invert = (node, dir)=> node[dir] = mouse[dir]
           nodes.forEach((node)=> {
+              // 如果鼠标移动导致节点横／纵坐标距离鼠标超过250，
+              // 将节点的横／纵坐标改为鼠标坐标
               Math.abs(node.x - mouse.x) > 250 && invert(node, 'x')
               Math.abs(node.y - mouse.y) > 250 && invert(node, 'y')
               node.period--

@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <project-experiences :project-experiences="resumeData.projectExperiences"></project-experiences>
-    <school-experiences :school-experiences="resumeData.schoolExperiences"></school-experiences>
+    <!-- <school-experiences :school-experiences="resumeData.schoolExperiences"></school-experiences> -->
     <education-backgrounds :education-backgrounds="resumeData.educationBackgrounds"></education-backgrounds>
     <personal-introductions :personal-introductions="resumeData.personalIntroductions"></personal-introductions>
   </div>
